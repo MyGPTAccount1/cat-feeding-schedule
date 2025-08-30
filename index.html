@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat Feeding Schedule Calculator — Easy Planner</title>
+  <meta name="description" content="Free cat feeding schedule calculator. Plan exact meal times across the day, split portions, and export a 3–7 day plan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Cat Feeding Schedule Calculator",
+  "url": "https://example.com/",
+  "applicationCategory": "PetsApplication",
+  "operatingSystem": "All",
+  "description": "Plan consistent cat meal times and portions. Export shareable schedules.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <h1>Cat Feeding Schedule Calculator</h1>
+      <nav>
+        <a href="/blog/how-to-set-an-automatic-cat-feeder.html">Blog</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/affiliate-disclosure.html">Affiliate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Top ad placeholder -->
+  <div class="ad-slot ad-top">Ad • Place AdSense code here</div>
+
+  <main class="wrap grid">
+    <section class="card">
+      <h2>Build your daily schedule</h2>
+      <form id="calc">
+        <label>Meals per day
+          <input type="number" min="1" max="12" value="4" id="meals">
+        </label>
+        <label>Start time (first meal)
+          <input type="time" value="07:00" id="start">
+        </label>
+        <label>End time (last meal)
+          <input type="time" value="21:00" id="end">
+        </label>
+        <label>Portion per meal (scoops, optional)
+          <input type="number" step="0.1" min="0" id="portion" placeholder="e.g., 0.25">
+        </label>
+        <label>Plan length (days)
+          <input type="number" min="1" max="7" value="3" id="days">
+        </label>
+        <details class="mt">
+          <summary>Feeder planner (optional)</summary>
+          <div class="subgrid">
+            <label># of feeders <input type="number" min="1" max="6" value="3" id="feeders"></label>
+            <label>Slots per feeder <input type="number" min="1" max="6" value="4" id="slots"></label>
+          </div>
+          <p class="muted">We’ll map meals to feeders/slots to avoid running empty.</p>
+        </details>
+        <button type="button" id="go">Generate</button>
+      </form>
+      <div id="results" class="results"></div>
+      <button type="button" id="copy" class="ghost">Copy schedule</button>
+    </section>
+    <aside class="sidebar">
+      <div class="ad-slot">Ad • Sidebar</div>
+      <h3>Recommended automatic feeders</h3>
+      <ul class="aff">
+        <li><a href="#" rel="sponsored nofollow">PetSafe 5‑Meal Feeder</a></li>
+        <li><a href="#" rel="sponsored nofollow">Whisker Feeder‑Robot</a></li>
+        <li><a href="#" rel="sponsored nofollow">Casfuy 6‑Meal Feeder</a></li>
+      </ul>
+      <div class="ad-slot">Ad • In‑content</div>
+      <h3>Popular tools</h3>
+      <ul class="links">
+        <li><a href="/blog/how-to-set-an-automatic-cat-feeder.html">Automatic feeder timing guide</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>© 2025-08-30 Cat Feeding Schedule Calculator • <a href="/terms.html">Terms</a></p>
+    </div>
+  </footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
